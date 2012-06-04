@@ -37,7 +37,7 @@ package com.ideaskill.projector {
 				frame2.dispose ();
 				// does anyone know how to release camera?
 			}
-			camera = Camera.getCamera (null);
+			camera = Camera.getCamera (name);
 			camera.setMode (width, height, fps, favorArea);
 			video = new Video (width, height);
 			video.attachCamera (camera);
