@@ -49,7 +49,7 @@ package {
 			var s:Number = 2.0;
 			ct1.redOffset   = -(((c & 0xff0000) >> 16) + s * 255) / (s + 1);
 			ct1.greenOffset = -(((c & 0x00ff00) >> 8)  + s * 255) / (s + 1);
-			ct1.blueOffset  = -(  c & 0x0000ff         + s * 255) / (s + 1);
+			ct1.blueOffset  = -( (c & 0x0000ff)        + s * 255) / (s + 1);
 			frame.colorTransform (frame.rect, ct1);
 			
 			// add to canvas
